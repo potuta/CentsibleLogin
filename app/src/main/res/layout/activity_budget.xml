@@ -101,7 +101,7 @@
                 android:textSize="15sp"
                 android:fontFamily="serif"
                 android:layout_marginRight="5dp"
-                android:background=""
+                android:background="@android:color/transparent"
                 android:textColor="@color/black"/>
 
             <Button
@@ -112,7 +112,7 @@
                 android:textSize="15sp"
                 android:fontFamily="serif"
                 android:layout_marginRight="5dp"
-                android:background=""
+                android:background="@android:color/transparent"
                 android:textColor="@color/black"/>
 
             <Button
@@ -122,7 +122,7 @@
                 android:text="Statistics"
                 android:textSize="15sp"
                 android:fontFamily="serif"
-                android:background=""
+                android:background="@android:color/transparent"
                 android:textColor="@color/black"/>
 
         </LinearLayout>
