@@ -29,6 +29,12 @@ public class DashboardActivity extends AppCompatActivity {
         if (view == findViewById(R.id.budgetbtn)) {
             replaceFragment(new BudgetFragment());
         }
+        if (view == findViewById((R.id.statsbtn))) {
+            replaceFragment(new fragment_statistics());
+        }
+        if (view == findViewById(R.id.expensesbtn)) {
+            replaceFragment(new fragment_records());
+        }
     }
 
     private void replaceFragment(Fragment fragment) {

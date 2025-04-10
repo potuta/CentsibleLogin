@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgbg"
+    tools:context=".fragment_records">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:fontFamily="serif"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:text="Categories"
+            android:layout_marginBottom="3dp"
+            android:layout_marginHorizontal="50dp"/>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="160dp"
+            android:layout_height="36dp"
+            android:background="@drawable/spinner_bg"
+            android:layout_marginHorizontal="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:text="Price"
+            android:layout_marginTop="25dp"
+            android:layout_marginHorizontal="50dp"/>
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="300dp"
+            android:layout_height="36dp"
+            android:layout_marginHorizontal="50dp"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="#F3B03E"/>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="45dp"
+            android:backgroundTint="#F3B03E"
+            android:text="Add"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:textSize="17dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="serif"
+            android:text="RECORDS"/>
+
+        <EditText
+            android:id="@+id/recorditem"
+            android:layout_width="280dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="#F3B03E"
+            android:fontFamily="serif"
+            android:inputType="text"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/recorditemprice"
+            android:layout_width="280dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="120dp"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="#F3B03E"
+            android:fontFamily="serif"
+            android:inputType="text"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/recordsavings"
+            android:layout_width="280dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="#F3B03E"
+            android:fontFamily="serif"
+            android:inputType="text"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/recordsavingsmoney"
+            android:layout_width="280dp"
+            android:layout_height="36dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="#F3B03E"
+            android:fontFamily="serif"
+            android:inputType="text"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/record"
+            android:layout_width="280dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="25dp"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="#F3B03E"
+            android:fontFamily="serif"
+            android:inputType="text"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/recordprice"
+            android:layout_width="280dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="120dp"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="#F3B03E"
+            android:fontFamily="serif"
+            android:inputType="text"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</FrameLayout>

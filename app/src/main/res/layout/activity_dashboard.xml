@@ -54,6 +54,7 @@
             android:fontFamily="serif"
             android:text="Expenses"
             android:textColor="@color/black"
+            android:onClick="onButtonClicked"
             android:textSize="14sp" />
 
         <Button
@@ -63,6 +64,7 @@
             android:background="@android:color/transparent"
             android:fontFamily="serif"
             android:text="Statistics"
+            android:onClick="onButtonClicked"
             android:textColor="@color/black"
             android:textSize="14sp" />
 
