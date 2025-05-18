@@ -37,4 +37,5 @@ public class BudgetViewModel extends AndroidViewModel {
     public LiveData<BudgetModel> getBudget(int id) {
         return budgetRepository.getBudget(id);
     }
+
 }

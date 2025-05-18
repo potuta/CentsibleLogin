@@ -38,11 +38,13 @@ public class BudgetFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_budget, container, false);
         view.setBackground(null);
 
+        InitializeSpinner(view);
+
         budgetViewModel = new ViewModelProvider(this).get(BudgetViewModel.class);
         int id = getSpinnerPostion(view);
 
         checkExistingData(view, id);
-        InitializeSpinner(view);
+
         InitializeButton(view);
 
         return view;
@@ -51,7 +53,23 @@ public class BudgetFragment extends Fragment {
     private void checkExistingData(View view, int id) {
         budgetViewModel.getBudget(id).removeObservers(getViewLifecycleOwner());
         budgetViewModel.getBudget(id).observe(getViewLifecycleOwner(), existingBudget -> {
-            updateUI(view, existingBudget);
+            TextView budgetTV = view.findViewById(R.id.budgetmoney);
+            TextView targetSavingsTV = view.findViewById(R.id.targetmoney);
+            TextView dailyExpensesTV = view.findViewById(R.id.dailymoney);
+            Button calculateButton = view.findViewById(R.id.calculate);
+
+            if (existingBudget != null) {
+                budgetTV.setText(String.valueOf(existingBudget.getBudget()));
+                targetSavingsTV.setText(String.valueOf(existingBudget.getTargetSavings()));
+                dailyExpensesTV.setText(String.valueOf(computeDailyExpenses(existingBudget.getBudget(), existingBudget.getTargetSavings(), existingBudget.getId())));
+                calculateButton.setText("Update");
+            } else {
+                budgetTV.setText("0.00");
+                targetSavingsTV.setText("0.00");
+                dailyExpensesTV.setText("0.00");
+                calculateButton.setText("Calculate");
+
+            }
         });
     }
 
@@ -93,7 +111,8 @@ public class BudgetFragment extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 if (isSpinnerInitialized) {
-                    checkExistingData(view, position);
+                    int spinnerPosition = getSpinnerPostion(view);
+                    checkExistingData(view, spinnerPosition);
                 } else {
                     isSpinnerInitialized = true;
                 }

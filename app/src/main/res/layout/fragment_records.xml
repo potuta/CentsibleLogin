@@ -94,7 +94,7 @@
             android:text="RECORDS"/>
 
         <EditText
-            android:id="@+id/recorditem"
+            android:id="@+id/record1"
             android:layout_width="280dp"
             android:layout_height="36dp"
             android:layout_marginStart="120dp"
@@ -106,7 +106,7 @@
             android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/recorditemprice"
+            android:id="@+id/recordprice1"
             android:layout_width="280dp"
             android:layout_height="36dp"
             android:layout_marginStart="120dp"
@@ -117,7 +117,7 @@
             android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/recordsavings"
+            android:id="@+id/record2"
             android:layout_width="280dp"
             android:layout_height="36dp"
             android:layout_marginTop="25dp"
@@ -129,7 +129,7 @@
             android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/recordsavingsmoney"
+            android:id="@+id/recordprice2"
             android:layout_width="280dp"
             android:layout_height="36dp"
             android:layout_marginHorizontal="15dp"
@@ -140,7 +140,7 @@
             android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/record"
+            android:id="@+id/record3"
             android:layout_width="280dp"
             android:layout_height="36dp"
             android:layout_marginStart="120dp"
@@ -152,7 +152,7 @@
             android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/recordprice"
+            android:id="@+id/recordprice3"
             android:layout_width="280dp"
             android:layout_height="36dp"
             android:layout_marginStart="120dp"
